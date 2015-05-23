@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+<style type="text/css">
+<!--
+	demo{
+	cursor: help;
+	}
+-->
+</style>
+<script type="text/javascript" src="/VFS/res/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" >
+	jQuery(document).ready(function($){
+		$("#form").submit(function(evt){
+			//alert("提交中..");
+			//evt.preventDefault();
+			//alert("被阻止！");
+		}).click(function(evt){
+			//evt.preventDefault();
+		});
+	});
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	with(document){
+	write(encodeURI("呵呵"));
+	write("<br/>");
+	write(decodeURI("%E5%91%B5%E5%91%B5"));
+	write("<br/>");
+	//“\”、“/”、“:”、“*”、“?”、“双引号”、“<”、“>”、“|”，并使用<img>标签来查看对比效果
+	write(encodeURIComponent("/-\\-:-*-?-\"-<->-|"));
+	write("<br/>");
+	write(decodeURIComponent("%2F-%5C-%3A-*-%3F-%22-%3C-%3E-%7C"));	
+	write("<br/>");
+	write(decodeURIComponent("%2F-%5C-%3A-*-%3F-%22-%3Cimg%3E-%7C"));	
+	write("<br/>");
+	write(encodeURIComponent("/-\\-:-*-?-\"-&lt;-&gt;-|"));
+	write("<br/>");
+	write(decodeURIComponent("%2F-%5C-%3A-*-%3F-%22-%26lt%3B-%26gt%3B-%7C"));	
+	write("<br/>");
+	write(decodeURIComponent("%2F-%5C-%3A-*-%3F-%22-%26lt%3Bimg%26gt%3B-%7C"));	
+	write("<br/>");
+	write(encodeURIComponent('http://172.16.128.111:8080/FileMapping/?aSmfLnbKwFkdHB44cQOngxQbVgyIWFF5f0NuuccpBIgx8GIsIpZmYTSZx9071kR00wwlaXbYsE5jKWBgTQhCOwjtgWWKFMVTcjbiCytWdfAtSAtDgAoQG8wWfRRAtUvs=14'));
+	write("<br>");
+	write("====================生成测试链接===============<br/>");
+	shell = "dirdir";
+	name = "fdskjfjdsioj";
+	src = "E:\\InstalledApp\\Zend\\Apache2\\htdocs\\FileMapping\\core\\setting\\backup";
+	type = "real";
+	ids = "1";
+	url = "http://localhost:8080/FileMapping/?xxx=";
+	uri = shell + "|" + name + "|" + src + "|" + type + "|" + ids;
+	write ( url + encodeURIComponent ( uri ) );
+	write("<br>");
+	write(encodeURIComponent("http://172.16.128.111:8080/FileMapping/?a2bBfLX6cSlU75pQcmrqmO4vLDazc2dOOqpgg3kTWjcNS62fZ9LlYdjPEcMUIrIjjFeO1xGvkUCI0D2VeV6PkoD8WqkKHaLWgbfaQn6bjyUMGtPu7HPEaoORvBIkkDLa=16-1"));
+	}
+</script>
+	<!-- 假表单，伪装成"?x=xxx&x=xxx&x=xxx"提交的形式 -->
+	<form action="./" id="form" method="post">
+		<input type="hidden" name="shell" id="shell" />
+		目录显示名：<input align="right" type="text" name="display" id="display" /><br />
+		目录路径：<input align="right" type="text" name="src" id="src" /><br />
+		目录类型：<input align="right" type="text" name="type" id="type" /><br />
+		id串：<input align="right" type="text" name="ids" id="ids" /><br />
+		<input align="right" type="submit" />
+	</form>
+
+	<img src="/FileMapping/res/img/163940n7bh7bzo0wdbsvbw[1].gif" />
+
+
+
+	<br/>
+	<hr/>
+	<!-- 配置视图层模板 -->
+	<code class="theCode" dojoType="doCallDojoTypes" onmouseout="javascript:callToJavaTypes();">
+		{$content . $content ++ ..}
+		{$content .= $content ++ ..}
+		{$content \= $content ++ ..}
+		{$content %= $content ++ ..}
+	</code>
+
+	
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

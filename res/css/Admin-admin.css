@@ -1,0 +1,353 @@
+@charset "utf-8";
+#container {
+	height: 665px;
+	width: 1250px;
+	margin-top: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #00F;
+	z-index:0;
+}
+
+
+#session {
+	height: 80px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	background-color: #9CC;
+	float:none;
+	clear:both;
+}
+#menus,#url {
+	background-color: #ddd;
+	height: 35px;
+	font-size: 24px;
+	line-height: 35px;
+	color: #033;
+	text-decoration: none;
+	text-align: left;
+	vertical-align: middle;
+	border: 2px solid #CCC;
+}
+#content {
+	height: 477px;
+	background-color: #6CF;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+}
+#left {
+	background-color: #EEE;
+	height: 477px;
+	width: 494px;
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #CCC;
+	float: left;
+	overflow: scroll;
+}
+
+#right {
+	background-color: #FFF;
+	height: 477px;
+	width: 750px;
+	float: left;
+}
+
+#right div.navbar{
+	height:20px;
+}
+
+#right_content {
+	height: 436px;
+	width: 750px;
+	overflow: scroll;
+	z-index:0;
+}
+
+#menus{
+	border-bottom-width:1px;
+}
+#url{
+	border-top-width: 1px;
+}
+#status {
+	height: 26px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+
+input{
+	margin-top:2px;
+	width:700px;
+	height:15px;
+}
+
+/*索引树相关的CSS开始=======================*/
+ul#ulroot{
+	margin-left:45px;
+}
+
+/*ul#ulroot * {
+	list-style-image:url(../img/+.jpg);
+}*/
+
+body{
+	font-family:微软雅黑;
+	z-index:0;
+}
+
+li.opened{
+	list-style-image: url(../img/-.jpg);
+	border-left-width: thin;
+	border-left-style: dotted;
+	border-left-color: #666;
+}
+
+li.closed{
+	list-style-image:url(../img/+.jpg);
+}
+
+li.hasNoChild,li.isFile{
+	list-style:none;
+	list-style-type:none;
+	list-style-image:none;
+}
+
+/*===========================索引树相关的CSS结束*/
+
+/*右侧内容区的宫格CSS 开始=======================*/
+.v_row {
+	clear: left;
+	height: 127px;
+}
+.v_left {
+	width: 102px;
+	margin-top: 25px;
+	margin-right: 7px;
+	margin-left: 15px;
+	float: left;
+	height: 102px;
+	text-align: center;
+	text-wrap:suppress;
+}
+.v_middle {
+	width: 102px;
+	margin-top: 25px;
+	margin-right: 7px;
+	margin-left: 8px;
+	float: left;
+	height: 102px;
+	text-align: center;
+	text-wrap:suppress;
+}
+.v_right {
+	width: 102px;
+	margin-top: 25px;
+	margin-right: 15px;
+	margin-left: 8px;
+	float: left;
+	height: 102px;
+	text-align:center;
+	text-wrap:suppress;
+}
+.v_row img{
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+/*========================右侧内容区的宫格CSS结束*/
+
+/*==========对话框：#error_action 开始============*/
+
+#error_action{
+	width:420px;
+}
+
+#error_action .modal-footer .btn.btn-primary{
+	width:75px;
+	float:right;
+	margin-left:110px;
+	margin-right:25px;
+}
+
+#erroraction_msg{
+	font-family:微软雅黑;
+	color:#F00;
+	font-size:18px;
+	text-align:center;
+	margin:15px auto;
+	display:block;
+}
+
+/*=============对话框：error_action 结束=============*/
+
+/*==============对话框：are_you_sure开始=============*/
+
+#are_you_sure{
+	width:460px;
+}
+#are_you_sure span{
+	font-family:微软雅黑;
+	color:#F00;
+	font-size:18px;
+	text-align:center;
+	margin:15px auto;
+	display:block;
+}
+#are_you_sure .modal-footer .btn.btn-primary{
+	width:75px;
+	float:right;
+	margin-left:110px;
+	margin-right:25px;
+}
+#are_you_sure .modal-footer .btn{
+	width:55px;
+	float:right;
+	margin-right:110px;
+	margin-left:25px;
+}
+
+/*==============对话框：are_you_sure结束=============*/
+
+/*==========对话框：#filefile 开始============*/
+#filefile{
+	width: 420px;
+}
+#filefile input{
+	width: 370px;
+}
+#filefile .modal-footer .btn{
+	width:55px;
+	float:right;
+	margin-right:110px;
+	margin-left:25px;
+}
+#filefile .modal-footer .btn.btn-primary{
+	width:55px;
+	float:right;
+	margin-left:110px;
+	margin-right:25px;
+}
+/*==========对话框：#filefile 结束============*/
+
+/*==========对话框：#dirdir 开始============*/
+
+#dirdir{
+	width:420px;
+}
+
+#dirdir .modal-footer .btn{
+	width:55px;
+	float:right;
+	margin-right:110px;
+	margin-left:25px;
+}
+
+#dirdir .modal-footer .btn.btn-primary{
+	width:55px;
+	float:right;
+	margin-left:110px;
+	margin-right:25px;
+}
+
+#dirdir_newname,#dirdir_realdir{
+	width:350px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*=============对话框：#dirdir 结束=============*/
+
+/*==========对话框：#empdir 开始============*/
+
+#empdir{
+	width:420px;
+}
+
+#empdir .modal-footer .btn{
+	width:55px;
+	float:right;
+	margin-right:110px;
+	margin-left:25px;
+}
+
+#empdir .modal-footer .btn.btn-primary{
+	width:55px;
+	float:right;
+	margin-left:110px;
+	margin-right:25px;
+}
+
+#empdir_newname{
+	width:350px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*=============对话框：#empdir 结束=============*/
+
+/**********right_content右键菜单 开始***************/
+
+#dircontext_in_right_content,#filecontext_in_right_content{
+	position:absolute;
+	display:none;
+}
+
+/**********right_content右键菜单 结束***************/
+
+/*以下是覆盖bootstrap样式*/
+.btn{
+	margin-bottom:8px;
+	margin-left:1px;
+}
+
+
+li .btn-link{
+	font-family:微软雅黑;
+	color:#036;
+	margin-top:0px;
+	margin-bottom:1px;
+	margin-left:0px;
+	padding-top:0px;
+	padding-left:0px;
+	border-width:0px;
+	font-size:14px;
+	line-height:18px;
+}
+
+ul{
+	margin-top:1px;
+}
+ul.breadcrumb{
+	display: block;
+	margin-bottom: 5px;
+	line-height: 18px;
+	white-space: nowrap;
+}
+ul.breadcrumb li{
+	font-size:16px;
+	font-family:微软雅黑;
+	color:#06C;
+	line-height:22px;
+	cursor:alias;
+}
+
+ul.breadcrumb li.active{
+	cursor:not-allowed;
+}
+
+/*=============覆盖bootstrap样式结束===============*/
